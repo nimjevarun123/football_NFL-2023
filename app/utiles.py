@@ -20,7 +20,7 @@ class win_loss():
             self.input_featues = json.load(in_file)
 
     def prediction(self):
-        self.import_files()        
+        # self.import_files()        
 
         user_input = np.zeros(len(self.input_featues['input_features']))    
         # print(user_input)
