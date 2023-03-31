@@ -17,15 +17,15 @@ class win_loss():
     
 
         with open(config.json_path,'r') as in_file: 
-            self.input_featues = json.load(in_file)
+            self.input_features = json.load(in_file)
 
     def prediction(self):
-        # self.import_files()        
+        self.import_files()       
 
-        user_input = np.zeros(len(self.input_featues['input_features']))    
+        user_input = np.zeros(len(self.input_features['input_features']))    
         # print(user_input)
 
-        array= np.array(self.input_featues['input_features'])
+        array= np.array(self.input_features['input_features'])
 
 
         team_string = "Team_" + "html_Team"
